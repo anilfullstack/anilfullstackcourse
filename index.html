@@ -2,25 +2,30 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text To Speech</title>
+
+    <title>forms</title>
 </head>
 <body>
-    <h2>Text To Speech</h2>
-    <textarea id="txt" cols="30" rows="10"></textarea> <br>
-    <button id="btn">Speak</button>
+    <h1>Survey</h1>
+    <p>Please enter the following detils as a part of this survey!</p>
+    <label for="Name">Name</label> <br>
+    <input type="text"> <br> <br>
+    <label for="Phone_no">Phone Number</label> <br>
+    <input type="number"> <br><br>
+    <label for="email">Email</label> <br>
+    <input type="email"> <br><br>
+    <label for="age">Age</label> <br>
+    <input type="number"> <br><br>
+    <label for="skill">Skill</label> <br>
+    <input type="text"> <br><br>
+    <label for="yop">Year of Passing</label> <br>
+    <input type="date"> <br><br>
+    <label for="CGPA">CGPA</label> <br>
+    <input type="number"> <br> <br>
+    <button for="submit">submit</button> 
 
-    <Script>
-        let txt = document.getElementById("txt");
-        let btn = document.getElementById("btn");
-    
-        btn.addEventListener("click", function() {
-            let text = txt.value;
-            let utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = "tr";
-        });
-    </Script>
+</form>
 </body>
-
+   
 </html>
